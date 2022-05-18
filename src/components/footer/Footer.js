@@ -40,7 +40,7 @@ function Footer(){
                 <h2 class="footer-title">CONTÁCTANOS</h2>
                 <form id="footer-form">
                     <input class="footer-form-input" type="email" placeholder="Correo electrónico" />
-                    <textarea  name="mensaje" placeholder="Escribe aquí tu mensaje"></textarea><br />
+                    <textarea name="mensaje" placeholder="Escribe aquí tu mensaje"></textarea><br />
                     <input class="btn-enviar" type="submit" value="Enviar" />
                 </form>
             </article>
