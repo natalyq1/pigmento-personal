@@ -6,14 +6,14 @@ import Header from './components/header-nav/Header';
 import Footer from './components/footer/Footer';
 import Galeria from './components/bodygaleria/Bodygaleria';
 import Productos from './components/bodyproductos/Bodyproductos';
+import Registro from './components/registro/Registro';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header /> 
-    <Galeria />
-    <Productos />
+    <Registro />
   <Footer />
    
   </React.StrictMode>
