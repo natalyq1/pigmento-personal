@@ -23,7 +23,7 @@ function Header(){
     <label for="chk-menu" class="btn-menu">
     <i class="fa-solid fa-bars"></i>
     </label>
-    <li class="item"><NavLink to="/inicio" className="nav-link" activeClassName="active">Inicio</NavLink></li>
+    <li class="item"><NavLink to="/" className="nav-link" activeClassName="active">Inicio</NavLink></li>
     <li class="item"><NavLink to="/galeria" className="nav-link" activeClassName="active">Galeria</NavLink></li>
     <li class="item"><NavLink to="/productos" className="nav-link" activeClassName="active">Productos</NavLink></li>
     <li class="item"><NavLink to="/talleres" className="nav-link" activeClassName="active">Talleres</NavLink></li>
