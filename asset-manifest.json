@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pigmento-personal/static/css/main.118d027f.css",
-    "main.js": "/pigmento-personal/static/js/main.568f4ab7.js",
+    "main.js": "/pigmento-personal/static/js/main.ba2c609f.js",
     "static/media/pinturas1.jpg": "/pigmento-personal/static/media/pinturas1.f86fde5d2df075428487.jpg",
     "static/media/espatulas productos.jpg": "/pigmento-personal/static/media/espatulas productos.a8ef696d65e78d968337.jpg",
     "static/media/pinceles.jpg": "/pigmento-personal/static/media/pinceles.09efd68430ac453fb80e.jpg",
@@ -11,10 +11,10 @@
     "static/media/bandera.svg": "/pigmento-personal/static/media/bandera.d8f36acf50ebba7703df5e3300b145dc.svg",
     "static/media/Line 1.svg": "/pigmento-personal/static/media/Line 1.d3a0200680aad417cbdf258e998176b1.svg",
     "main.118d027f.css.map": "/pigmento-personal/static/css/main.118d027f.css.map",
-    "main.568f4ab7.js.map": "/pigmento-personal/static/js/main.568f4ab7.js.map"
+    "main.ba2c609f.js.map": "/pigmento-personal/static/js/main.ba2c609f.js.map"
   },
   "entrypoints": [
     "static/css/main.118d027f.css",
-    "static/js/main.568f4ab7.js"
+    "static/js/main.ba2c609f.js"
   ]
 }
