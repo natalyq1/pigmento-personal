@@ -2,7 +2,7 @@
   "name": "proyectoreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://natalyq1.github.io/pigmento-personal/",
+  "homepage": "https://natalyq1.github.io/pigmento-personal",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",

@@ -12,6 +12,7 @@ root.render(
 < BrowserRouter>
     <Routes>
     <Route path='/' element={<Inicio/>}></Route>
+    <Route path='/pigmento-personal/' element={<Inicio/>}></Route>
     <Route path='/inicio' element={<Navigate replace to={"/"}/>}></Route>
     <Route path='/galeria' element={<Galeria/>}></Route>
     <Route path='/productos' element={<Productos/>}></Route>
