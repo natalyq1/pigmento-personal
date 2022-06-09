@@ -2,6 +2,15 @@
 import './Header.css';
 import React from 'react';
 import Lupa from'./lupa.png'
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+  } from "react-router-dom";
+
 function Header(){
     return(
 /*caracteristicas del componente*/
@@ -14,11 +23,11 @@ function Header(){
     <label for="chk-menu" class="btn-menu">
     <i class="fa-solid fa-bars"></i>
     </label>
-    <li class="item"><a href="../../index.html">Inicio</a></li>
-    <li class="item"><a href="galeria.html">Galeria</a></li>
-    <li class="item"><a href="../pages/productos/productos.html">Productos</a></li>
-    <li class="item"><a href="../pages/talleres.html">Talleres</a></li>
-    <li class="item"><a href="../pages/login.html">Tu Cuenta</a></li>
+    <li class="item"><NavLink to="/inicio" className="nav-link" activeClassName="active">Inicio</NavLink></li>
+    <li class="item"><NavLink to="/galeria" className="nav-link" activeClassName="active">Galeria</NavLink></li>
+    <li class="item"><NavLink to="/productos" className="nav-link" activeClassName="active">Productos</NavLink></li>
+    <li class="item"><NavLink to="/talleres" className="nav-link" activeClassName="active">Talleres</NavLink></li>
+    <li class="item"><NavLink to="/cuenta" className="nav-link" activeClassName="active">Tu Cuenta</NavLink></li>
         <li class="item"><input  type="text" placeholder="Buscar"/><img src={Lupa}/></li>
   
 </nav>

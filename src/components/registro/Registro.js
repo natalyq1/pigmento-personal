@@ -1,5 +1,5 @@
 
-import {useState} from 'react';
+import React, {useState} from 'react';
 import {Ftitulo, Ftitulo2, Ftitulo3, Formulario,Label,ContenedorTerminos,ContenedorBotonCentrado,Boton,MensajeExito,MensajeError} from '../../elements/Formulariovalidacion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle} from '@fortawesome/free-solid-svg-icons';
@@ -56,17 +56,17 @@ const onSubmit =(e)=>{
   telefono.valido==='true'&&
   direccion.valido==='true'&&
   direccion2.valido==='true'&&
-  terminos.valido==='true'
+  terminos
   ){
 	cambiarFormularioValido(true);
 	cambiarUsuario({campo:'',valido:''});
-	cambiarNombre({campo:'',valido:''});
-	cambiarPassword({campo:'',valido:''});
-	cambiarPassword2({campo:'',valido:''});
-	cambiarCorreo({campo:'',valido:''});
-	cambiarTelefono({campo:'',valido:''});
-    cambiarDireccion({campo:'',valido:''});
-    cambiarDireccion2({campo:'',valido:''});
+	cambiarNombre({campo:'',valido: null});
+	cambiarPassword({campo:'',valido: null});
+	cambiarPassword2({campo:'',valido:'null'});
+	cambiarCorreo({campo:'',valido: null});
+	cambiarTelefono({campo:'',valido: null});
+    cambiarDireccion({campo:'',valido: null});
+    cambiarDireccion2({campo:'',valido:'null'});
 }else{
 	cambiarFormularioValido(false);
 }
@@ -97,7 +97,7 @@ const onSubmit =(e)=>{
 					estado={nombre}
 					cambiarEstado={cambiarNombre}
 					tipo="text"
-					label="Nombre"
+					label="Nombre y apellido"
 					placeholder="John Doe"
 					name="usuario"
 					leyendaError="El nombre solo puede contener letras y espacios."
@@ -182,14 +182,14 @@ const onSubmit =(e)=>{
         Acepto Terminos y Condiciones
       </Label>
       </ContenedorTerminos>
-      {false && <MensajeError>
+      {formularioValido===false && <MensajeError>
         <p>
           <FontAwesomeIcon icon={faExclamationTriangle}/>
           <b>Error:</b>Por favor diligenciar el formulario correctamente</p>
       </MensajeError>}
       <ContenedorBotonCentrado>
         <Boton type="submit">Enviar</Boton>
-        <MensajeExito>Formulario enviado Exitosamente</MensajeExito>
+        {formularioValido === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
       </ContenedorBotonCentrado>
      
       </Formulario>

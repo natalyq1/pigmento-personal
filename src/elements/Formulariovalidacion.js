@@ -62,6 +62,7 @@ box-shadow:  19px 19px 0px #9d915f,
 
 	@media (max-width: 800px){
 		grid-template-columns: 1fr;
+        margin: 2em 4em 3em 4em;
 	}
 `;
 
@@ -168,17 +169,17 @@ const Boton = styled.button`
 	height: 45px;
 	line-height: 45px;
 	width: 20%;
-	background: #000;
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
     border-radius: 2px;
+	color: #F9D544;
     background: linear-gradient(145deg, #5d2913, #4e2210);
     
 
 	&:hover {
-		box-shadow: 3px 2px 3px #582612;
+		box-shadow: 3px 2px 3px #000;
 	}
 `;
 
