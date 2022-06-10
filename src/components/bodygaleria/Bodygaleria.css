@@ -31,6 +31,10 @@ h3{
     justify-content: flex-end;
     flex-direction: column;
     justify-content: space-around;
+    
+}
+.g-menu h3{
+  padding: 1em 1em 1em 1em;  
 }
 .g-titulo-sec{
     background-color:#f9d54463;
@@ -38,6 +42,7 @@ h3{
 .g-menu h3:hover{
     background-color:#5a3c2b63;
     color: var(--cafeoscuro-color);
+   
 }
 .g-card{
     width: 20em;
