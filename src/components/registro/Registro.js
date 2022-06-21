@@ -76,7 +76,7 @@ const onSubmit =(e)=>{
     <main>
      <Ftitulo> 
      <Ftitulo2>Mi cuenta</Ftitulo2>
-     <Ftitulo3>Mi Carrito</Ftitulo3>
+     
      </Ftitulo>
      
       <Formulario action="" onSubmit={onSubmit} > 
